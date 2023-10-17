@@ -53,8 +53,6 @@ body {
 }
 
 button {
-    background-color: $clr-white;
-    color: $clr-primary;
     font-size: 1.375rem;
     font-weight: 700;
     padding: .5rem .75rem;
@@ -68,6 +66,28 @@ button {
         border: 2px solid $clr-white;
         cursor: pointer;
         transform: scale(1.1);
+    }
+}
+
+.btn-primary {
+    background-color: $clr-primary;
+    color: $clr-white;
+
+    &:hover {
+        background-color: $clr-white;
+        color: $clr-primary;
+        border: 2px solid $clr-primary;
+    }
+}
+
+.btn-secondary {
+    background-color: $clr-white;
+    color: $clr-primary;
+
+    &:hover {
+        background-color: $clr-primary;
+        color: $clr-white;
+        border: 2px solid $clr-white;
     }
 }
 
@@ -87,5 +107,27 @@ button {
 
     &__secondary {
         background-color: $clr-background-secondary;
+    }
+
+    &__usp {
+        display: flex;
+        justify-content: space-between;
+        gap: 85px;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+            .panel-title {
+                font-size: 64px;
+                font-weight: 700;
+            }
+        }
+
+        img {
+            border-radius: 10px;
+        }
     }
 }

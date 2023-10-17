@@ -53,8 +53,6 @@ body {
 }
 
 button {
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(211, 100%, 18%);
   font-size: 1.375rem;
   font-weight: 700;
   padding: 0.5rem 0.75rem;
@@ -68,6 +66,26 @@ button:hover {
   border: 2px solid hsl(0, 0%, 100%);
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.btn-primary {
+  background-color: hsl(211, 100%, 18%);
+  color: hsl(0, 0%, 100%);
+}
+.btn-primary:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(211, 100%, 18%);
+  border: 2px solid hsl(211, 100%, 18%);
+}
+
+.btn-secondary {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(211, 100%, 18%);
+}
+.btn-secondary:hover {
+  background-color: hsl(211, 100%, 18%);
+  color: hsl(0, 0%, 100%);
+  border: 2px solid hsl(0, 0%, 100%);
 }
 
 .main-container {
@@ -85,6 +103,24 @@ button:hover {
 }
 .panel__secondary {
   background-color: hsl(0, 0%, 75%);
+}
+.panel__usp {
+  display: flex;
+  justify-content: space-between;
+  gap: 85px;
+}
+.panel__usp .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.panel__usp .content .panel-title {
+  font-size: 64px;
+  font-weight: 700;
+}
+.panel__usp img {
+  border-radius: 10px;
 }
 
 header {
