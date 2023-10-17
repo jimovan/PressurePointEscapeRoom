@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select,
+address {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+body {
+    font-family: $ff-regular;
+    font-weight: $fw-regular;
+    font-size: 1.375rem;
+    color: $clr-primary;
+    background-color: $clr-background-primary;
+}
+
+footer {
+    background-color: $clr-primary;
+    width: 100%;
+
+    .footer-container {
+
+        margin: 24px auto;
+
+        .address {
+
+            color: $clr-white;
+            font-size: 0.8125rem;
+
+            &__name {
+                font-size: 0.9375rem;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.main-container {
+    max-width: 70rem;
+    display: grid;
+    margin: 0 auto;
+}
+
+button {
+    background-color: $clr-white;
+    color: $clr-primary;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    transition: transform .2s ease-in-out;
+
+    &:hover {
+        background-color: $clr-primary;
+        color: $clr-white;
+        border: 2px solid $clr-white;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,39 @@
+header {
+    width: 100%;
+    background-color: $clr-primary;
+    height: 6.75rem;
+    padding: 10px 0;
+
+    .header-container {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        align-items: center;
+
+        .header__item:first-child {
+            justify-self: flex-start;
+        }
+
+        .header__item:last-child {
+            justify-self: flex-end;
+        }
+    }
+}
+
+nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2.5rem;
+
+    .nav-item {
+        color: $clr-white;
+        font-size: 1.25rem;
+    }
+
+    .active {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-decoration: underline;
+        text-underline-offset: .5rem;
+    }
+}
