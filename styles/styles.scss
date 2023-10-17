@@ -2,3 +2,26 @@
 @import "globals";
 @import "header";
 @import "footer";
+
+.hero {
+    background-color: $clr-primary;
+
+    .hero-container {
+        display: flex;
+        justify-items: center;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        color: $clr-white;
+        text-align: center;
+        line-height: 36px;
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    }
+}
