@@ -52,33 +52,6 @@ body {
     background-color: $clr-background-primary;
 }
 
-footer {
-    background-color: $clr-primary;
-    width: 100%;
-
-    .footer-container {
-
-        margin: 24px auto;
-
-        .address {
-
-            color: $clr-white;
-            font-size: 0.8125rem;
-
-            &__name {
-                font-size: 0.9375rem;
-                font-weight: 700;
-            }
-        }
-    }
-}
-
-.main-container {
-    max-width: 70rem;
-    display: grid;
-    margin: 0 auto;
-}
-
 button {
     background-color: $clr-white;
     color: $clr-primary;
@@ -96,4 +69,10 @@ button {
         cursor: pointer;
         transform: scale(1.1);
     }
+}
+
+.main-container {
+    max-width: 70rem;
+    display: grid;
+    margin: 0 auto;
 }
