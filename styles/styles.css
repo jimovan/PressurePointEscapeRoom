@@ -122,6 +122,10 @@ button:hover {
 .panel__usp .content .panel-title {
   font-size: 64px;
   font-weight: 700;
+  line-height: 52px;
+}
+.panel__usp .content p {
+  line-height: 32px;
 }
 .panel__usp img {
   border-radius: 10px;
