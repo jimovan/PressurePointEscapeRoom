@@ -31,7 +31,6 @@ footer {
             justify-content: space-between;
 
             &__links {
-                color: $clr-white;
                 font-size: 1rem;
 
                 display: flex;
@@ -44,6 +43,7 @@ footer {
                     align-items: center;
                     gap: .5rem;
                     width: 5rem;
+                    color: $clr-white;
                     text-align: center;
 
                     .icon-container {
