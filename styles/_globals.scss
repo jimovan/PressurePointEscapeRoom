@@ -97,6 +97,10 @@ button {
     margin: 0 auto;
 }
 
+.panel-reverse {
+    flex-direction: row-reverse;
+}
+
 .panel {
     padding: 3.125rem 0;
     gap: 1.875rem;
