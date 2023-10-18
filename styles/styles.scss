@@ -44,5 +44,10 @@
     span {
         font-size: 1.875rem;
         font-weight: 700;
+
+        @media screen and (max-width: 24rem) {
+
+            font-size: 1.5rem;
+        }
     }
 }

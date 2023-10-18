@@ -4,6 +4,10 @@ header {
     height: 6.75rem;
     padding: 0.625rem 0;
 
+    @media screen and (max-width: 24rem) {
+        height: 9rem;
+    }
+
     .header-container {
         display: grid;
         grid-template-columns: 1fr max-content 1fr;
@@ -16,6 +20,30 @@ header {
         .header__item:last-child {
             justify-self: flex-end;
         }
+
+        @media screen and (max-width: 24rem) {
+
+            grid-template-columns: 1fr 1fr;
+            row-gap: 0.5rem;
+
+            //768px
+            .header__logo {
+                grid-column: 1 / 2;
+                grid-row: 1;
+
+                width: 60px;
+            }
+
+            .header__nav {
+                grid-column: 1 /span 2;
+                grid-row: 2;
+            }
+
+            .header__btn {
+                grid-column: 2 / 3;
+                grid-row: 1;
+            }
+        }
     }
 }
 
@@ -24,6 +52,10 @@ nav {
     align-items: flex-end;
     justify-content: center;
     gap: 2.5rem;
+
+    @media screen and (max-width: 24rem) {
+        gap: 1.5rem;
+    }
 
     .nav-item {
         color: $clr-white;
