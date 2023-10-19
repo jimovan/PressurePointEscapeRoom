@@ -252,7 +252,7 @@ header .header-container {
   align-items: center;
 }
 header .header-container .header__logo {
-  width: 52px;
+  width: 3.25rem;
 }
 header .header-container .header__btn {
   justify-self: flex-end;
@@ -266,6 +266,9 @@ header .header-container .menu-desktop {
   display: none;
 }
 @media screen and (min-width: 48rem) {
+  header .header-container .header__logo {
+    width: 3.75rem;
+  }
   header .header-container .header__btn {
     grid-column: 3/4;
   }
@@ -358,22 +361,22 @@ footer {
 footer .footer-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
   gap: 2rem;
 }
 footer .footer-container .footer__logo {
   width: 110px;
 }
-@media screen and (min-width: 48rem) {
-  footer .footer-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-}
 footer .footer-container .info__company {
   grid-row: 2/3;
   display: flex;
   justify-content: space-around;
+}
+@media screen and (min-width: 48rem) {
+  footer .footer-container .info__company {
+    grid-row: 1/3;
+    justify-content: normal;
+    gap: 1rem;
+  }
 }
 footer .footer-container .info__company .address {
   color: hsl(0, 0%, 100%);
@@ -398,6 +401,11 @@ footer .footer-container .info__links {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+}
+@media screen and (min-width: 48rem) {
+  footer .footer-container .info__links {
+    justify-content: flex-end;
+  }
 }
 footer .footer-container .info__links .link-item {
   display: flex;
@@ -437,22 +445,22 @@ footer .footer-container .info__links .link-item .icon-container .icon-terms {
     gap: 1.5625rem;
   }
 }
-@media screen and (min-width: 48rem) {
-  footer .footer-container .info__links {
-    flex-direction: column;
-    align-items: center;
-  }
-  footer .footer-container .info__links .link-item {
-    width: auto;
-  }
-  footer .footer-container .info__links .link-item .icon-container {
-    display: none;
-  }
-}
 footer .footer-container .info__social {
   display: flex;
   justify-content: center;
   gap: 2.5rem;
+}
+@media screen and (min-width: 48rem) {
+  footer .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  footer .footer-container .footer__logo {
+    width: 145px;
+  }
+  footer .footer-container .info__social {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
 }
 
 .hero {

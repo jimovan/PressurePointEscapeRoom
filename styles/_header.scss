@@ -16,7 +16,7 @@ header {
         align-items: center;
 
         .header__logo {
-            width: 52px;
+            width: 3.25rem;
         }
 
         .header__btn {
@@ -34,6 +34,10 @@ header {
         }
 
         @media screen and (min-width: 48rem) {
+
+            .header__logo {
+                width: 3.75rem;
+            }
 
             .header__btn {
                 grid-column: 3/4;
