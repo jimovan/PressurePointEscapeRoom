@@ -4,13 +4,31 @@
         <img src="images/icons/logo-white.svg" alt="Pressure Point Escape Rooms icon" width="80px"
             class="header__item header__logo" />
 
-        <nav class="header__item header__nav">
+        <button class="btn-secondary header__item header__btn">Book Now</button>
+
+        <nav class="header__item header__nav menu-desktop">
             <a href="#home" class="nav-item active">Home</a>
             <a href="#rooms" class="nav-item">The Rooms</a>
             <a href="#aboutus" class="nav-item">About Us</a>
             <a href="#faqs" class="nav-item">FAQs</a>
         </nav>
 
-        <button class="btn-secondary header__item header__btn">Book Now</button>
+        <span class="header__item header__nav menu-mobile" onclick="openMenu()">
+            <i class="fa fa-bars fa-2xs"></i>
+        </span>
+
+        <!-- The overlay -->
+        <div id="mobile-nav" class="nav-overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="nav-item btn-close" onclick="closeNav()">&times;</a>
+
+            <!-- Overlay content -->
+            <div class="overlay-menu">
+                <a href="#home" class="nav-item active">Home</a>
+                <a href="#rooms" class="nav-item">The Rooms</a>
+                <a href="#aboutus" class="nav-item">About Us</a>
+                <a href="#faqs" class="nav-item">FAQs</a>
+            </div>
+        </div>
     </div>
 </header>

@@ -47,26 +47,47 @@ h6 {
 body {
     font-family: $ff-regular;
     font-weight: $fw-regular;
-    font-size: 1.375rem;
+    font-size: 0.75rem;
     color: $clr-primary;
     background-color: $clr-background-primary;
 
-    @media screen and (max-width: 64rem) {
-        font-size: 1.25rem;
+    @media screen and (min-width: 48rem) {
+        //768px
+        font-size: 1rem;
     }
 
-    @media screen and (max-width: 24rem) {
-        font-size: 1rem;
+    @media screen and (min-width: 64rem) {
+        //1024px
+        font-size: 1.375rem;
+    }
+}
+
+p {
+    line-height: 1.25rem;
+
+    @media screen and (min-width: 48rem) {
+        //768px
+        line-height: 1.6rem;
+    }
+
+    @media screen and (min-width: 64rem) {
+        //1024px
+        line-height: 2rem;
     }
 }
 
 button {
-    font-size: 1.375rem;
+    font-size: 1rem;
     font-weight: 700;
     padding: .5rem .75rem;
     border: none;
     border-radius: 0.625rem;
     transition: transform .2s ease-in-out;
+
+    @media screen and (min-width: 64rem) {
+        //1024px
+        font-size: 1.375rem;
+    }
 
     &:hover {
         cursor: pointer;
@@ -97,34 +118,30 @@ button {
 }
 
 .main-container {
-    max-width: 70rem;
+    max-width: 100%;
+    padding: 0px 10px;
     display: grid;
     margin: 0 auto;
 
-    @media screen and (max-width: 75rem) {
-        //1200px
-        max-width: 60rem;
+    @media screen and (min-width: 48rem) {
+        //768px
+        max-width: 45rem;
+        padding: 0px;
     }
 
-    @media screen and (max-width: 64rem) {
-        //1024px
+    @media screen and (min-width: 54rem) {
+        //864px
         max-width: 52rem;
     }
 
-    @media screen and (max-width: 54rem) {
-        //864px
-        max-width: 46rem;
+    @media screen and (min-width: 64rem) {
+        //1024px
+        max-width: 62rem;
     }
 
-    @media screen and (max-width: 48rem) {
-        //768px
-        max-width: 40rem;
-    }
-
-    @media screen and (max-width: 24rem) {
-        //384px
-        max-width: 100%;
-        padding: 0px 10px;
+    @media screen and (min-width: 75rem) {
+        //1200px
+        max-width: 70rem;
     }
 }
 
@@ -133,8 +150,13 @@ button {
 }
 
 .panel {
-    padding: 3.125rem 0;
+    padding: 1.5rem 0;
     gap: 1.875rem;
+
+    @media screen and (min-width:64rem) {
+        //1024px
+        padding: 3.125rem 0;
+    }
 
     &__primary {
         background-color: $clr-background-primary;
@@ -147,33 +169,36 @@ button {
     &__usp {
         display: flex;
         justify-content: space-between;
-        gap: 5.3125rem;
+        gap: 2.5rem;
+
+        @media screen and (min-width: 64rem) {
+            gap: 5.3125rem;
+        }
 
         .content {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 1.875rem;
+            gap: 1rem;
 
             .panel-title {
-                font-size: 4rem;
+                font-size: 2rem;
                 font-weight: 700;
-                line-height: 3.25rem;
-            }
-
-            p {
                 line-height: 2rem;
             }
 
-            @media screen and (max-width: 64rem) {
+            p {
+                align-self: flex-start;
+            }
 
+            @media screen and (min-width: 64rem) {
                 //1024px
-                .panel-title {
-                    font-size: 3rem;
-                }
 
-                p {
-                    line-height: 1.7rem;
+                gap: 1.875rem;
+
+                .panel-title {
+                    font-size: 4rem;
+                    line-height: 3.25rem;
                 }
             }
         }
@@ -182,9 +207,22 @@ button {
             border-radius: 0.625rem;
         }
 
-        @media screen and (max-width: 64rem) {
+        .img-social,
+        .img-teamwork,
+        .img-family,
+        .img-date {
+            display: none;
+        }
+
+        @media screen and (min-width:48rem) {
             //1024px
-            gap: 2.5rem;
+
+            .img-social,
+            .img-teamwork,
+            .img-family,
+            .img-date {
+                display: block;
+            }
 
             .img-social {
                 height: 350px;
@@ -194,23 +232,26 @@ button {
                 height: 260px;
             }
 
-            .img-family {
-                height: 300px;
-            }
-
+            .img-family,
             .img-date {
                 height: 300px;
             }
         }
 
-        @media screen and (max-width:24rem) {
-            //1024px            
+        @media screen and (min-width: 64rem) {
+            //1024px
 
-            .img-social,
-            .img-teamwork,
+            .img-social {
+                height: 443px;
+            }
+
+            .img-teamwork {
+                height: 350px;
+            }
+
             .img-family,
             .img-date {
-                display: none;
+                height: 380px;
             }
         }
     }

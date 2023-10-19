@@ -7,11 +7,14 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
     <script src="/scripts/script.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="styles/styles.css">
 
@@ -24,7 +27,7 @@
 
     <div class="hero">
         <div class="hero-container main-container">
-            <img src="images/icons/logo-white.svg" alt="Pressure Point Escape Rooms icon" width="235px" />
+            <img src="images/icons/logo-white.svg" alt="Pressure Point Escape Rooms icon" class="hero__image" />
             <div class="hero__title">
                 <h2>Can you work together to complete the mission?</h2>
                 <h2>And more importantly... can you handle the pressure?</h2>
@@ -34,13 +37,17 @@
         </div>
     </div>
 
-    <div class="panel panel__primary welcome-panel main-container">
-        <p class="welcome-intro">At Pressure Point Escape Rooms, we give you an unforgettable experience. Our
-            fictionally themed escape rooms
-            will reveal your hidden genius and test your problem solving ability against the clock.</p>
+    <div class="panel panel__primary">
+        <div class="welcome-panel main-container">
+            <p class="welcome-intro">At Pressure Point Escape Rooms, we give you an unforgettable experience. Our
+                fictionally themed escape rooms
+                will reveal your hidden genius and test your problem solving ability against the clock.</p>
 
-        <p class="welcome-share">Share the <span>rush</span>, the <span>intensity</span> and the <span>pressure</span>
-            with your friends, family and your work colleagues!</p>
+            <p class="welcome-share">Share the <span>rush</span>, the <span>intensity</span> and the
+                <span>pressure</span>
+                with your friends, family and your work colleagues!
+            </p>
+        </div>
     </div>
 
     <div class="panel panel__secondary">
@@ -57,24 +64,28 @@
                 </p>
                 <button class="btn-primary">Book Now</button>
             </div>
-            <img src="images/social.jpg" height="443" class="img-social">
+            <img src="images/social.jpg" class="img-social">
         </div>
     </div>
 
-    <div class="panel panel-reverse panel__usp main-container">
-        <div class="content">
-            <h3 class="panel-title">Team Building</h3>
-            <p>
-                What better way to spend the day than with your team of superheroes? With our dedicated corporate room
-                you can discuss your work plan and your escape plan here at Pressure Point Escape Rooms.
-            </p>
-            <p>
-                Feel free to contact us to discuss the necessary requirements for a more personal experience for your
-                team.
-            </p>
-            <button class="btn-primary">Contact Us</button>
+    <div class="panel">
+        <div class="panel__usp panel-reverse main-container">
+            <div class="content">
+                <h3 class="panel-title">Team Building</h3>
+                <p>
+                    What better way to spend the day than with your team of superheroes? With our dedicated corporate
+                    room
+                    you can discuss your work plan and your escape plan here at Pressure Point Escape Rooms.
+                </p>
+                <p>
+                    Feel free to contact us to discuss the necessary requirements for a more personal experience for
+                    your
+                    team.
+                </p>
+                <button class="btn-primary">Contact Us</button>
+            </div>
+            <img src="images/teamwork.jpg" class="img-teamwork">
         </div>
-        <img src="images/teamwork.jpg" height="350" class="img-teamwork">
     </div>
 
     <div class="panel panel__secondary">
@@ -91,24 +102,27 @@
                 </p>
                 <button class="btn-primary">Book Now</button>
             </div>
-            <img src="images/family.jpg" height="380" class="img-family">
+            <img src="images/family.jpg" class="img-family">
         </div>
     </div>
 
-    <div class="panel panel-reverse panel__usp main-container">
-        <div class="content">
-            <h3 class="panel-title">Date Night</h3>
-            <p>
-                Book now to experience a date night with a difference! Pressure Point Escape Rooms are a perfect
-                opportunity for you and your date to really bond.
-            </p>
-            <p>
-                Whether this is your first date or you have been together for a while, we are pretty sure you will learn
-                something new about each other!
-            </p>
-            <button class="btn-primary">Contact Us</button>
+    <div class="panel">
+        <div class="panel__usp panel-reverse main-container">
+            <div class="content">
+                <h3 class="panel-title">Date Night</h3>
+                <p>
+                    Book now to experience a date night with a difference! Pressure Point Escape Rooms are a perfect
+                    opportunity for you and your date to really bond.
+                </p>
+                <p>
+                    Whether this is your first date or you have been together for a while, we are pretty sure you will
+                    learn
+                    something new about each other!
+                </p>
+                <button class="btn-primary">Contact Us</button>
+            </div>
+            <img src="images/date.jpg" class="img-date">
         </div>
-        <img src="images/date.jpg" width="500" class="img-date">
     </div>
 
     <div data-include="_footer"></div>

@@ -9,19 +9,27 @@
     .hero-container {
         display: flex;
         justify-items: center;
-        gap: 1.875rem;
+        gap: 1.25rem;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 3.125rem;
+        padding-bottom: 1.5rem;
+    }
+
+    &__image {
+        width: 150px;
+
+        @media screen and (min-width: 48rem) {
+            width: 235px
+        }
     }
 
     &__title {
         color: $clr-white;
         text-align: center;
-        line-height: 2.25rem;
+        line-height: 1.8rem;
 
         h2 {
-            font-size: 1.5rem;
+            font-size: 0.875rem;
             font-weight: 400;
         }
     }
@@ -32,6 +40,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 1.875rem;
 
     .welcome-intro {
         max-width: 46.25rem;
@@ -42,12 +51,11 @@
     }
 
     span {
-        font-size: 1.875rem;
+        font-size: 1rem;
         font-weight: 700;
 
-        @media screen and (max-width: 24rem) {
-
-            font-size: 1.5rem;
+        @media screen and (min-width: 48rem) {
+            font-size: 1.875rem;
         }
     }
 }
