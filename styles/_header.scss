@@ -4,11 +4,6 @@ header {
     height: 5rem;
     padding: 0.625rem 0;
 
-    @media screen and (min-width: 48rem) {
-        //768px
-        height: 6.75rem;
-    }
-
     .header-container {
         display: grid;
         grid-template-columns: 1fr max-content 1fr;
@@ -31,57 +26,6 @@ header {
 
         .menu-desktop {
             display: none;
-        }
-
-        @media screen and (min-width: 48rem) {
-
-            .header__logo {
-                width: 3.75rem;
-            }
-
-            .header__btn {
-                grid-column: 3/4;
-            }
-
-            .header__nav {
-                grid-column: 2/3;
-                grid-row: 1/2;
-            }
-
-            .menu-mobile {
-                display: none;
-            }
-
-            .menu-desktop {
-
-                display: flex;
-                align-items: flex-end;
-                gap: 0.5rem;
-
-                .nav-item {
-                    color: $clr-white;
-                    font-size: 0.875rem;
-                }
-
-                .active {
-                    font-size: 1rem;
-                    font-weight: 700;
-                    text-decoration: underline;
-                    text-underline-offset: .5rem;
-                }
-
-                @media screen and (min-width: 48rem) {
-                    gap: 2.5rem;
-
-                    .nav-item {
-                        font-size: 1.25rem;
-                    }
-
-                    .active {
-                        font-size: 1.5rem;
-                    }
-                }
-            }
         }
     }
 
@@ -125,8 +69,59 @@ header {
         right: 45px;
         font-size: 60px;
     }
+}
 
-    @media screen and (max-height: 450px) {
+@media screen and (min-width: 48rem) {
+
+    //768px
+    header {
+        height: 6.75rem;
+
+        .header-container {
+
+            .header__logo {
+                width: 3.75rem;
+            }
+
+            .header__btn {
+                grid-column: 3/4;
+            }
+
+            .header__nav {
+                grid-column: 2/3;
+                grid-row: 1/2;
+            }
+
+            .menu-mobile {
+                display: none;
+            }
+
+            .menu-desktop {
+
+                display: flex;
+                align-items: flex-end;
+                gap: 2.5rem;
+
+                .nav-item {
+                    color: $clr-white;
+                    font-size: 1.25rem;
+                }
+
+                .active {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    text-decoration: underline;
+                    text-underline-offset: .5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 450px) {
+
+    //768px
+    header {
         .overlay-menu .nav-item {
             font-size: 20px
         }
