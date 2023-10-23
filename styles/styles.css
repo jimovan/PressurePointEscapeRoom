@@ -111,32 +111,37 @@ button:hover {
   background-color: hsl(0, 0%, 75%);
 }
 .panel__usp {
-  display: flex;
-  justify-content: space-between;
-  gap: 2.5rem;
+  display: grid;
+  gap: 1.5rem;
+  justify-items: center;
 }
-.panel__usp .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-.panel__usp .content .panel-title {
+.panel__usp .panel-title {
   font-size: 2rem;
   font-weight: 700;
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
-.panel__usp .content p {
-  align-self: flex-start;
+.panel__usp .content {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
 }
-.panel__usp img {
+.panel__usp .content img {
   border-radius: 0.625rem;
 }
-.panel__usp .img-social,
-.panel__usp .img-teamwork,
-.panel__usp .img-family,
-.panel__usp .img-date {
-  display: none;
+.panel__usp .content .img-social,
+.panel__usp .content .img-teamwork,
+.panel__usp .content .img-family,
+.panel__usp .content .img-date {
+  height: 100px;
+}
+.panel__usp .content .content__desc {
+  display: grid;
+  grid-template-rows: max-content max-content 1fr;
+  justify-items: center;
+  gap: 1rem;
+}
+.panel__usp .content .content__desc p {
+  align-self: flex-start;
 }
 
 @media screen and (min-width: 48rem) {
@@ -150,25 +155,35 @@ button:hover {
     max-width: 45rem;
     padding: 0px;
   }
+  .panel__usp .content .img-social,
+  .panel__usp .content .img-teamwork,
+  .panel__usp .content .img-family,
+  .panel__usp .content .img-date {
+    display: block;
+  }
+  .panel__usp .content .img-social {
+    height: 320px;
+  }
+  .panel__usp .content .img-teamwork {
+    height: 235px;
+  }
+  .panel__usp .content .img-family,
+  .panel__usp .content .img-date {
+    height: 260px;
+  }
 }
 @media screen and (min-width: 54rem) {
   .main-container {
     max-width: 52rem;
   }
-  .panel__usp .img-social,
-  .panel__usp .img-teamwork,
-  .panel__usp .img-family,
-  .panel__usp .img-date {
-    display: block;
-  }
-  .panel__usp .img-social {
+  .panel__usp .content .img-social {
     height: 350px;
   }
-  .panel__usp .img-teamwork {
+  .panel__usp .content .img-teamwork {
     height: 260px;
   }
-  .panel__usp .img-family,
-  .panel__usp .img-date {
+  .panel__usp .content .img-family,
+  .panel__usp .content .img-date {
     height: 300px;
   }
 }
@@ -189,29 +204,45 @@ button:hover {
     padding: 3.125rem 0;
   }
   .panel__usp {
-    gap: 5.3125rem;
+    gap: 2.5rem;
   }
-  .panel__usp .content {
-    gap: 1.875rem;
-  }
-  .panel__usp .content .panel-title {
+  .panel__usp .panel-title {
     font-size: 4rem;
     line-height: 3.25rem;
   }
-  .panel__usp .img-social {
-    height: 443px;
+  .panel__usp .content .content__desc {
+    gap: 1.875rem;
   }
-  .panel__usp .img-teamwork {
-    height: 350px;
+  .panel__usp .content .img-social {
+    height: 430px;
   }
-  .panel__usp .img-family,
-  .panel__usp .img-date {
-    height: 380px;
+  .panel__usp .content .img-teamwork {
+    height: 320px;
+  }
+  .panel__usp .content .img-family,
+  .panel__usp .content .img-date {
+    height: 370px;
   }
 }
 @media screen and (min-width: 75rem) {
   .main-container {
     max-width: 70rem;
+  }
+  .panel {
+    padding: 3.125rem 0;
+  }
+  .panel__usp {
+    gap: 2.5rem;
+  }
+  .panel__usp .content .img-social {
+    height: 443px;
+  }
+  .panel__usp .content .img-teamwork {
+    height: 350px;
+  }
+  .panel__usp .content .img-family,
+  .panel__usp .content .img-date {
+    height: 380px;
   }
 }
 header {
@@ -419,11 +450,11 @@ footer .footer-container .info__social {
   background-color: hsl(211, 100%, 18%);
 }
 .hero .hero-container {
-  display: flex;
+  display: grid;
+  grid-template-rows: max-content 1fr 1fr;
   justify-items: center;
-  gap: 1.25rem;
-  flex-direction: column;
   align-items: center;
+  gap: 1.25rem;
   padding-bottom: 1.5rem;
 }
 .hero__image {

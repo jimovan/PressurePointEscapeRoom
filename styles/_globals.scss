@@ -116,36 +116,44 @@ button {
     }
 
     &__usp {
-        display: flex;
-        justify-content: space-between;
-        gap: 2.5rem;
+
+        display: grid;
+        gap: 1.5rem;
+        justify-items: center;
+
+        .panel-title {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.5rem;
+        }
 
         .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+
+            display: grid;
+            justify-items: center;
             gap: 1rem;
 
-            .panel-title {
-                font-size: 2rem;
-                font-weight: 700;
-                line-height: 2rem;
+            img {
+                border-radius: 0.625rem;
             }
 
-            p {
-                align-self: flex-start;
+            .img-social,
+            .img-teamwork,
+            .img-family,
+            .img-date {
+                height: 100px;
             }
-        }
 
-        img {
-            border-radius: 0.625rem;
-        }
+            .content__desc {
+                display: grid;
+                grid-template-rows: max-content max-content 1fr;
+                justify-items: center;
+                gap: 1rem;
 
-        .img-social,
-        .img-teamwork,
-        .img-family,
-        .img-date {
-            display: none;
+                p {
+                    align-self: flex-start;
+                }
+            }
         }
     }
 }
@@ -166,6 +174,33 @@ button {
         max-width: 45rem;
         padding: 0px;
     }
+
+    .panel {
+        &__usp {
+            .content {
+
+                .img-social,
+                .img-teamwork,
+                .img-family,
+                .img-date {
+                    display: block;
+                }
+
+                .img-social {
+                    height: 320px;
+                }
+
+                .img-teamwork {
+                    height: 235px;
+                }
+
+                .img-family,
+                .img-date {
+                    height: 260px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 54rem) {
@@ -177,25 +212,19 @@ button {
 
     .panel {
         &__usp {
+            .content {
+                .img-social {
+                    height: 350px;
+                }
 
-            .img-social,
-            .img-teamwork,
-            .img-family,
-            .img-date {
-                display: block;
-            }
+                .img-teamwork {
+                    height: 260px;
+                }
 
-            .img-social {
-                height: 350px;
-            }
-
-            .img-teamwork {
-                height: 260px;
-            }
-
-            .img-family,
-            .img-date {
-                height: 300px;
+                .img-family,
+                .img-date {
+                    height: 300px;
+                }
             }
         }
     }
@@ -224,28 +253,30 @@ button {
         padding: 3.125rem 0;
 
         &__usp {
-            gap: 5.3125rem;
+            gap: 2.5rem;
+
+            .panel-title {
+                font-size: 4rem;
+                line-height: 3.25rem;
+            }
 
             .content {
-                gap: 1.875rem;
-
-                .panel-title {
-                    font-size: 4rem;
-                    line-height: 3.25rem;
+                .content__desc {
+                    gap: 1.875rem;
                 }
-            }
 
-            .img-social {
-                height: 443px;
-            }
+                .img-social {
+                    height: 430px;
+                }
 
-            .img-teamwork {
-                height: 350px;
-            }
+                .img-teamwork {
+                    height: 320px;
+                }
 
-            .img-family,
-            .img-date {
-                height: 380px;
+                .img-family,
+                .img-date {
+                    height: 370px;
+                }
             }
         }
     }
@@ -256,5 +287,28 @@ button {
     //1200px
     .main-container {
         max-width: 70rem;
+    }
+
+    .panel {
+        padding: 3.125rem 0;
+
+        &__usp {
+            gap: 2.5rem;
+
+            .content {
+                .img-social {
+                    height: 443px;
+                }
+
+                .img-teamwork {
+                    height: 350px;
+                }
+
+                .img-family,
+                .img-date {
+                    height: 380px;
+                }
+            }
+        }
     }
 }
