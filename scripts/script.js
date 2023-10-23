@@ -7,12 +7,6 @@ $(function () {
 })
 
 function openMenu() {
-    // var x = document.getElementById("header-nav");
-    // if (x.className === "header__nav") {
-    //     x.className += " responsive";
-    // } else {
-    //     x.className = "header__nav";
-    // }
     document.getElementById("mobile-nav").style.height = "100%";
 }
 
