@@ -47,7 +47,7 @@ h6 {
 body {
   font-family: "Caudex", serif;
   font-weight: 400;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: hsl(211, 100%, 18%);
   background-color: hsl(0, 0%, 85%);
 }
@@ -132,7 +132,7 @@ button:hover {
 .panel__usp .content .img-teamwork,
 .panel__usp .content .img-family,
 .panel__usp .content .img-date {
-  height: 100px;
+  height: 160px;
 }
 .panel__usp .content .content__desc {
   display: grid;
