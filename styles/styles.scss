@@ -8,10 +8,10 @@
 
     .hero-container {
         display: grid;
-        grid-template-rows: max-content 1fr 1fr;
+        grid-template-rows: max-content 1fr;
         justify-items: center;
         align-items: center;
-        gap: 1.25rem;
+        gap: 2rem;
         padding-bottom: 1.5rem;
     }
 
@@ -22,10 +22,11 @@
     &__title {
         color: $clr-white;
         text-align: center;
-        line-height: 1.8rem;
+        display: grid;
+        gap: 1rem;
 
         h2 {
-            font-size: 0.875rem;
+            font-size: 1.25rem;
             font-weight: 400;
         }
     }
@@ -52,6 +53,18 @@
     }
 }
 
+@media screen and (min-width: 37.5rem) {
+
+    //600px
+    .hero {
+        &__title {
+            h2 br {
+                display: none;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 48rem) {
 
     //768px            
@@ -65,8 +78,6 @@
         }
 
         &__title {
-            line-height: 2.5rem;
-
             h2 {
                 font-size: 1.5rem;
             }
