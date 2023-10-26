@@ -168,7 +168,7 @@ button {
         line-height: 1.6rem;
     }
 
-    .main-container {
+    .main__container {
         max-width: 35rem;
         padding: 0px;
     }
@@ -217,7 +217,7 @@ button {
 @media screen and (min-width: 48rem) {
 
     //768px
-    .main-container {
+    .main__container {
         max-width: 45rem;
     }
 }

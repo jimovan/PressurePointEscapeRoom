@@ -149,7 +149,7 @@ button:hover {
   p {
     line-height: 1.6rem;
   }
-  .main-container {
+  .main__container {
     max-width: 35rem;
     padding: 0px;
   }
@@ -182,7 +182,7 @@ button:hover {
   }
 }
 @media screen and (min-width: 48rem) {
-  .main-container {
+  .main__container {
     max-width: 45rem;
   }
 }
