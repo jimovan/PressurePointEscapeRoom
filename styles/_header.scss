@@ -4,7 +4,7 @@ header {
     height: 5rem;
     padding: 0.625rem 0;
 
-    .header-container {
+    .header {
         display: grid;
         grid-template-columns: 1fr max-content 1fr;
         grid-template-rows: 1fr;
@@ -18,18 +18,18 @@ header {
             justify-self: flex-end;
         }
 
-        .menu-mobile {
+        .menu__mobile {
             color: $clr-white;
             font-size: 2.5rem;
             justify-self: flex-end;
         }
 
-        .menu-desktop {
+        .menu__desktop {
             display: none;
         }
     }
 
-    .nav-overlay {
+    .nav__overlay {
         height: 0;
         width: 100%;
         position: fixed;
@@ -41,7 +41,7 @@ header {
         transition: 0.5s;
     }
 
-    .overlay-menu {
+    .overlay__menu {
         position: relative;
         top: 25%;
         width: 100%;
@@ -49,7 +49,7 @@ header {
         margin-top: 30px;
     }
 
-    .nav-overlay .nav-item {
+    .nav__overlay .nav__item {
         padding: 8px;
         text-decoration: none;
         font-size: 36px;
@@ -58,12 +58,12 @@ header {
         transition: 0.3s;
     }
 
-    .nav-overlay .nav-item:hover,
-    .nav-overlay .nav-item:focus {
+    .nav__overlay .nav__item:hover,
+    .nav__overlay .nav__item:focus {
         font-size: 40px;
     }
 
-    .nav-overlay .btn-close {
+    .nav__overlay .btn-close {
         position: absolute;
         top: 20px;
         right: 45px;
@@ -77,7 +77,7 @@ header {
     header {
         height: 6.75rem;
 
-        .header-container {
+        .header {
 
             .header__logo {
                 width: 3.75rem;
@@ -92,17 +92,17 @@ header {
                 grid-row: 1/2;
             }
 
-            .menu-mobile {
+            .menu__mobile {
                 display: none;
             }
 
-            .menu-desktop {
+            .menu__desktop {
 
                 display: flex;
                 align-items: flex-end;
                 gap: 2.5rem;
 
-                .nav-item {
+                .nav__item {
                     color: $clr-white;
                     font-size: 1.25rem;
                 }
@@ -122,11 +122,11 @@ header {
 
     //768px
     header {
-        .overlay-menu .nav-item {
+        .overlay__menu .nav__item {
             font-size: 20px
         }
 
-        .overlay-menu .btn-close {
+        .overlay__menu .btn-close {
             font-size: 40px;
             top: 15px;
             right: 35px;

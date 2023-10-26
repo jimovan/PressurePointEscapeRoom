@@ -79,17 +79,17 @@ button:hover {
   border: 2px solid hsl(211, 100%, 18%);
 }
 
-.btn-secondary {
+.btn__secondary {
   background-color: hsl(0, 0%, 100%);
   color: hsl(211, 100%, 18%);
 }
-.btn-secondary:hover {
+.btn__secondary:hover {
   background-color: hsl(211, 100%, 18%);
   color: hsl(0, 0%, 100%);
   border: 2px solid hsl(0, 0%, 100%);
 }
 
-.main-container {
+.main__container {
   max-width: 100%;
   padding: 0px 10px;
   display: grid;
@@ -187,7 +187,7 @@ button:hover {
   }
 }
 @media screen and (min-width: 54rem) {
-  .main-container {
+  .main__container {
     max-width: 52rem;
   }
   .panel__usp .content .img-social {
@@ -211,7 +211,7 @@ button:hover {
   button {
     font-size: 1.375rem;
   }
-  .main-container {
+  .main__container {
     max-width: 62rem;
   }
   .panel {
@@ -239,7 +239,7 @@ button:hover {
   }
 }
 @media screen and (min-width: 75rem) {
-  .main-container {
+  .main__container {
     max-width: 70rem;
   }
   .panel {
@@ -265,27 +265,27 @@ header {
   height: 5rem;
   padding: 0.625rem 0;
 }
-header .header-container {
+header .header {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   grid-template-rows: 1fr;
   align-items: center;
 }
-header .header-container .header__logo {
+header .header .header__logo {
   width: 3.25rem;
 }
-header .header-container .header__btn {
+header .header .header__btn {
   justify-self: flex-end;
 }
-header .header-container .menu-mobile {
+header .header .menu__mobile {
   color: hsl(0, 0%, 100%);
   font-size: 2.5rem;
   justify-self: flex-end;
 }
-header .header-container .menu-desktop {
+header .header .menu__desktop {
   display: none;
 }
-header .nav-overlay {
+header .nav__overlay {
   height: 0;
   width: 100%;
   position: fixed;
@@ -296,14 +296,14 @@ header .nav-overlay {
   overflow-x: hidden;
   transition: 0.5s;
 }
-header .overlay-menu {
+header .overlay__menu {
   position: relative;
   top: 25%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
 }
-header .nav-overlay .nav-item {
+header .nav__overlay .nav__item {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
@@ -311,11 +311,11 @@ header .nav-overlay .nav-item {
   display: block;
   transition: 0.3s;
 }
-header .nav-overlay .nav-item:hover,
-header .nav-overlay .nav-item:focus {
+header .nav__overlay .nav__item:hover,
+header .nav__overlay .nav__item:focus {
   font-size: 40px;
 }
-header .nav-overlay .btn-close {
+header .nav__overlay .btn-close {
   position: absolute;
   top: 20px;
   right: 45px;
@@ -326,29 +326,29 @@ header .nav-overlay .btn-close {
   header {
     height: 6.75rem;
   }
-  header .header-container .header__logo {
+  header .header .header__logo {
     width: 3.75rem;
   }
-  header .header-container .header__btn {
+  header .header .header__btn {
     grid-column: 3/4;
   }
-  header .header-container .header__nav {
+  header .header .header__nav {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  header .header-container .menu-mobile {
+  header .header .menu__mobile {
     display: none;
   }
-  header .header-container .menu-desktop {
+  header .header .menu__desktop {
     display: flex;
     align-items: flex-end;
     gap: 2.5rem;
   }
-  header .header-container .menu-desktop .nav-item {
+  header .header .menu__desktop .nav__item {
     color: hsl(0, 0%, 100%);
     font-size: 1.25rem;
   }
-  header .header-container .menu-desktop .active {
+  header .header .menu__desktop .active {
     font-size: 1.5rem;
     font-weight: 700;
     text-decoration: underline;
@@ -356,10 +356,10 @@ header .nav-overlay .btn-close {
   }
 }
 @media screen and (max-height: 450px) {
-  header .overlay-menu .nav-item {
+  header .overlay__menu .nav__item {
     font-size: 20px;
   }
-  header .overlay-menu .btn-close {
+  header .overlay__menu .btn-close {
     font-size: 40px;
     top: 15px;
     right: 35px;

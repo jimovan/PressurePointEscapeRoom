@@ -81,7 +81,7 @@ button {
     }
 }
 
-.btn-secondary {
+.btn__secondary {
     background-color: $clr-white;
     color: $clr-primary;
 
@@ -92,7 +92,7 @@ button {
     }
 }
 
-.main-container {
+.main__container {
     max-width: 100%;
     padding: 0px 10px;
     display: grid;
@@ -225,7 +225,7 @@ button {
 @media screen and (min-width: 54rem) {
 
     //864px
-    .main-container {
+    .main__container {
         max-width: 52rem;
     }
 
@@ -264,7 +264,7 @@ button {
         font-size: 1.375rem;
     }
 
-    .main-container {
+    .main__container {
         max-width: 62rem;
     }
 
@@ -304,7 +304,7 @@ button {
 @media screen and (min-width: 75rem) {
 
     //1200px
-    .main-container {
+    .main__container {
         max-width: 70rem;
     }
 
