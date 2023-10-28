@@ -111,15 +111,15 @@ button:hover {
   gap: 1.5rem;
   justify-items: center;
 }
-.panel__usp .panel-title {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-}
 .panel__usp .content {
   display: grid;
   justify-items: center;
   gap: 1rem;
+}
+.panel__usp .content .panel-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
 }
 .panel__usp .content img {
   border-radius: 0.625rem;
@@ -156,6 +156,12 @@ button:hover {
   .panel__usp .content {
     grid-template-columns: 1fr 1fr;
   }
+  .panel__usp .content .img-social,
+  .panel__usp .content .img-teamwork,
+  .panel__usp .content .img-family,
+  .panel__usp .content .img-date {
+    grid-row: 1/3;
+  }
   .panel__usp .content .img-social {
     height: 275px;
   }
@@ -165,6 +171,9 @@ button:hover {
   .panel__usp .content .img-family,
   .panel__usp .content .img-date {
     height: 260px;
+  }
+  .panel__usp .content .reverse {
+    grid-column: 2/3;
   }
   .panel__usp .content .content__desc {
     display: grid;
@@ -176,9 +185,6 @@ button:hover {
   }
   .panel__usp .content .content__desc button {
     align-self: start;
-  }
-  .panel__usp .content__reverse:nth-child(even) {
-    order: -1;
   }
 }
 @media screen and (min-width: 48rem) {
@@ -220,8 +226,8 @@ button:hover {
   .panel__usp {
     gap: 2.5rem;
   }
-  .panel__usp .panel-title {
-    font-size: 4rem;
+  .panel__usp .content .panel-title {
+    font-size: 3rem;
     line-height: 3.25rem;
   }
   .panel__usp .content .content__desc {
@@ -499,7 +505,7 @@ footer .footer-container .info__social {
   max-width: 33.125rem;
 }
 .welcome-panel span {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
