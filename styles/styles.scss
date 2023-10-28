@@ -53,6 +53,53 @@
     }
 }
 
+.faq-panel {
+    .accordion {
+        &__btn {
+            background-color: $clr-primary;
+            color: $clr-white;
+            cursor: pointer;
+            padding: 1.2rem;
+            width: 100%;
+            text-align: left;
+            transition: 0.4s;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:hover {
+                background-color: rgba($clr-primary, .8);
+            }
+
+            .active {
+                background-color: rgba($clr-primary, .8);
+            }
+
+            &:after {
+                content: '\02795';
+                /* Unicode character for "plus" sign (+) */
+                font-size: 13px;
+                color: $clr-white;
+                float: right;
+                margin-left: 5px;
+            }
+        }
+
+        .active:after {
+            content: "\2796";
+            /* Unicode character for "minus" sign (-) */
+        }
+
+        &__panel {
+            padding: 2rem;
+            display: none;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    }
+}
+
 @media screen and (min-width: 37.5rem) {
 
     //600px
