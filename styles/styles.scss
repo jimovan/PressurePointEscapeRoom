@@ -56,46 +56,53 @@
 .faq-panel {
     .accordion {
         &__btn {
+            display: flex;
+            justify-content: space-between;
             background-color: $clr-primary;
             color: $clr-white;
             cursor: pointer;
             padding: 1.2rem;
-            width: 100%;
             text-align: left;
-            transition: 0.4s;
 
             &:hover {
                 cursor: pointer;
-            }
-
-            &:hover {
                 background-color: rgba($clr-primary, .8);
             }
 
-            .active {
+            &.active {
                 background-color: rgba($clr-primary, .8);
-            }
 
-            &:after {
-                content: '\02795';
+                .icon:after {
+                    content: "\00268A";
+                    /* Unicode character for "minus" sign (-) */
+                }
+            }            
+
+            .icon::after {
+                content: '\00ff0b';
                 /* Unicode character for "plus" sign (+) */
-                font-size: 13px;
+                font-size: 22px;
                 color: $clr-white;
                 float: right;
                 margin-left: 5px;
             }
         }
 
-        .active:after {
-            content: "\2796";
-            /* Unicode character for "minus" sign (-) */
-        }
-
         &__panel {
-            padding: 2rem;
-            display: none;
+            padding: 0 2rem;
+            background-color: $clr-background-secondary;
+            max-height: 0px;
             overflow: hidden;
-            transition: max-height 0.2s ease-out;
+            transition: max-height 0.4s ease-out;
+
+            p {
+                margin: 2rem 0;
+            }
+
+            .note {
+                color: #b41616;
+                font-style: italic;
+            }
         }
     }
 }

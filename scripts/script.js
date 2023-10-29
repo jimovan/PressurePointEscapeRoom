@@ -10,12 +10,13 @@ $(document).ready(function () {
             this.classList.toggle("active");
 
             /* Toggle between hiding and showing the active panel */
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
+            var panel = this.nextElementSibling;            
+
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {                
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }            
         });
     }
 });

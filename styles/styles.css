@@ -511,40 +511,46 @@ footer .footer-container .info__social {
 }
 
 .faq-panel .accordion__btn {
+  display: flex;
+  justify-content: space-between;
   background-color: hsl(211, 100%, 18%);
   color: hsl(0, 0%, 100%);
   cursor: pointer;
   padding: 1.2rem;
-  width: 100%;
   text-align: left;
-  transition: 0.4s;
 }
 .faq-panel .accordion__btn:hover {
   cursor: pointer;
-}
-.faq-panel .accordion__btn:hover {
   background-color: rgba(0, 44, 92, 0.8);
 }
-.faq-panel .accordion__btn .active {
+.faq-panel .accordion__btn.active {
   background-color: rgba(0, 44, 92, 0.8);
 }
-.faq-panel .accordion__btn:after {
-  content: "➕";
+.faq-panel .accordion__btn.active .icon:after {
+  content: "⚊";
+  /* Unicode character for "minus" sign (-) */
+}
+.faq-panel .accordion__btn .icon::after {
+  content: "＋";
   /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  font-size: 22px;
   color: hsl(0, 0%, 100%);
   float: right;
   margin-left: 5px;
 }
-.faq-panel .accordion .active:after {
-  content: "➖";
-  /* Unicode character for "minus" sign (-) */
-}
 .faq-panel .accordion__panel {
-  padding: 2rem;
-  display: none;
+  padding: 0 2rem;
+  background-color: hsl(0, 0%, 75%);
+  max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.4s ease-out;
+}
+.faq-panel .accordion__panel p {
+  margin: 2rem 0;
+}
+.faq-panel .accordion__panel .note {
+  color: #b41616;
+  font-style: italic;
 }
 
 @media screen and (min-width: 37.5rem) {
