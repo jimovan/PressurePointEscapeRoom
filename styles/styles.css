@@ -70,11 +70,11 @@ button:hover {
   transform: scale(1.1);
 }
 
-.btn-primary {
+.btn__primary {
   background-color: hsl(211, 100%, 18%);
   color: hsl(0, 0%, 100%);
 }
-.btn-primary:hover {
+.btn__primary:hover {
   background-color: hsl(0, 0%, 100%);
   color: hsl(211, 100%, 18%);
   border: 2px solid hsl(211, 100%, 18%);
