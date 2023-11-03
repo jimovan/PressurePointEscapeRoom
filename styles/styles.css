@@ -518,6 +518,7 @@ footer .footer-container .info__social {
   cursor: pointer;
   padding: 1.2rem;
   text-align: left;
+  align-items: center;
 }
 .faq-panel .accordion__btn:hover {
   cursor: pointer;
