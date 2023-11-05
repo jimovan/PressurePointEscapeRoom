@@ -93,7 +93,6 @@ button:hover {
 .main__container {
   max-width: 100%;
   padding: 0px 10px;
-  display: grid;
   margin: 0 auto;
 }
 
@@ -490,6 +489,9 @@ footer .footer-container .info__social {
 .hero__title h2 {
   font-size: 1.25rem;
   font-weight: 400;
+}
+.hero .rooms {
+  gap: 2rem;
 }
 
 .welcome-panel {
